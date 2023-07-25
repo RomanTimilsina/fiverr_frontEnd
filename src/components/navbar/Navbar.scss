@@ -1,0 +1,132 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  height: 6vh;
+  display: flex;
+  gap: 5px;
+  padding: 10px 0 3px 0;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgb(3, 86, 3);
+  transition: 0.5s all ease;
+   
+  &.active{
+    background-color: white;
+    color: black;
+    height: 10vh;
+
+  } 
+
+  .container{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    .logo{
+      display: flex;
+      font-size: 25px;
+
+      .fiverr{
+        display: flex;
+      .text{
+        
+
+      }
+
+      .dot{
+        color: green;
+      }
+      }
+    }
+    .links{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+
+      .user{
+        margin-left: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position:relative;
+        cursor: pointer;
+
+        img{
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span{}
+
+        .options{
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 6vh;
+          gap: 5px;
+          padding: 10px;
+          width:fit-content;
+          background-color: rgb(203, 247, 203);
+          transition: 0.5s all ease;
+          color: #797878;
+          border-radius: 5px;
+          &.active{
+            top: 8vh;
+            background-color: green;
+
+          }
+
+          .option{
+            transition: 0.5s all ease;
+
+            &:hover{
+              padding: 5px;
+              color: rgb(20, 2, 2);
+            }
+
+          }
+        }
+      }
+
+      button{
+        padding: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgba(0,0,0,0);
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        &:hover{
+          border: none;
+          
+          border: 1px solid rgba(255, 255, 255, 0);
+          color: white;
+          background-color: rgb(31, 141, 31);
+
+        }
+      }
+    }
+  }
+  hr{
+    width: 100%;
+    border: 1px solid rgb(205, 196, 196);
+    margin: 5px 0 0 0;
+  }
+
+
+  .menu{
+    display: flex;
+    font-size: 14px;
+    font-weight:300;
+    width: 1200px;
+    color: lightgrey;
+    justify-content: space-between;
+
+    .menuLink{
+      color: green;
+    }
+  }
+}
