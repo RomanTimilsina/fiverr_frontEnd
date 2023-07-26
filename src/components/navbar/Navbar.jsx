@@ -13,6 +13,8 @@ const Navbar = () => {
   }
 
   const { pathname } = useLocation()
+
+  console.log(pathname)
   useEffect(() => {
     window.addEventListener('scroll',isActive)
 
@@ -28,7 +30,7 @@ const currentUser = {
 }
 
   return (
-    <div  className={active || pathname ? 'navbar active': 'navbar'}>
+    <div  className={active || pathname !== '/' ? 'navbar active': 'navbar'}>
       <div className="container">
         <div className="logo">
           <Link  to={'/'}  className="link">
@@ -71,7 +73,7 @@ const currentUser = {
         </div>
       </div>
       {
-        (active || pathname) && (
+        (active || pathname !== '/') && (
         <>
         
       <hr />
