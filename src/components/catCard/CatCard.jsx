@@ -19,3 +19,6 @@ const CatCard = ({item}) => {
 }
 
 export default CatCard
+
+
+
